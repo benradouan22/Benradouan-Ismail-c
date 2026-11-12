@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ismail Benradouan | Data Science & Mathematical Engineering Portfolio</title>
+    <meta name="description" content="Personal portfolio of Ismail Benradouan, Master's student in Mathematical Engineering and Data Science. Machine Learning, Big Data, and Distributed Computing." />
+    
+    <!-- OpenGraph / Social Metadata -->
+    <meta property="og:title" content="Ismail Benradouan | Portfolio" />
+    <meta property="og:description" content="Master in Mathematical Engineering & Data Science — Machine Learning, Big Data & Distributed Computing." />
+    <meta property="og:image" content="/assets/aistudio/WhatsApp_Image_2026-11-07_at_18.00.36_338bc997.jpeg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Plus Jakarta Sans, DM Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ====================================================================
+         1. TOP NAVIGATION BAR (Top Bar Contract: 3 Zones)
+         ==================================================================== -->
+    <header class="header" role="banner">
+      <div class="container nav-container">
+        <!-- Zone 1: Single-Element Wordmark -->
+        <a href="#hero" class="brand" aria-label="Ismail Benradouan Home">
+          <span class="brand-badge" aria-hidden="true">IB</span>
+          <span>Ismail Benradouan</span>
+        </a>
+
+        <!-- Zone 2: 4-5 Concise Single-Line Nav Links -->
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Zone 3: 1 Primary Action + Theme Toggle -->
+        <div class="nav-actions">
+          <button class="btn-icon theme-toggle-btn" aria-label="Switch theme mode" title="Toggle light/dark mode">
+            <svg class="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Default Sun Icon -->
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+          </button>
+
+          <a href="/assets/aistudio/ismail__1__f454b77e.pdf" download="Ismail_Benradouan_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary nav-cta-btn" title="Download CV in PDF format">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            CV (PDF)
+          </a>
+
+          <a href="#contact" class="btn btn-primary nav-cta-btn">
+            Get in Touch
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <a href="#about" class="mobile-nav-link">About <span aria-hidden="true">&rarr;</span></a>
+      <a href="#skills" class="mobile-nav-link">Skills <span aria-hidden="true">&rarr;</span></a>
+      <a href="#projects" class="mobile-nav-link">Projects <span aria-hidden="true">&rarr;</span></a>
+      <a href="#education" class="mobile-nav-link">Education <span aria-hidden="true">&rarr;</span></a>
+      <a href="#contact" class="mobile-nav-link">Contact <span aria-hidden="true">&rarr;</span></a>
+      <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <a href="/assets/aistudio/ismail__1__f454b77e.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download CV (PDF)
+        </a>
+        <a href="#contact" class="btn btn-primary" style="width: 100%;">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <!-- ====================================================================
+           2. HERO SECTION (Split-Screen & Proof Strip)
+           ==================================================================== -->
+      <section id="hero" class="section hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left Column: Typographic Hierarchy -->
+            <div class="hero-content reveal">
+              <div class="hero-kicker-wrapper">
+                <span class="section-kicker">Data Science & Mathematical Engineering</span>
+              </div>
+              <h1 class="hero-headline">
+                Transforming Complex Data into <span class="text-gradient">Predictive Intelligence</span>.
+              </h1>
+              <p class="hero-bio">
+                Master's candidate in Mathematical Engineering & Data Science at Ibn Zohr University. Specialized in Machine Learning, predictive modeling, and distributed Big Data systems. Developing data solutions ranging from rigorous exploratory analysis to scalable machine learning models.
+              </p>
+              
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                  Explore Projects
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="/assets/aistudio/ismail__1__f454b77e.pdf" download="Ismail_Benradouan_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  Download CV (PDF)
+                </a>
+                <a href="#contact" class="btn btn-ghost">
+                  Contact Me
+                </a>
+              </div>
+
+              <div class="hero-contact-inline">
+                <a href="mailto:benradouanismail05@gmail.com" title="Send email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  benradouanismail05@gmail.com
+                </a>
+                <span aria-hidden="true">·</span>
+                <span>Zagora / Ouarzazate, Morocco</span>
+              </div>
+            </div>
+
+            <!-- Right Column: Professional Portrait Frame -->
+            <div class="hero-visual reveal reveal-delay-2">
+              <div class="hero-card-frame">
+                <div class="hero-image-wrapper">
+                  <img
+                    src="/assets/aistudio/WhatsApp_Image_2026-11-07_at_18.00.36_338bc997.jpeg"
+                    alt="Ismail Benradouan portrait"
+                    class="hero-portrait"
+                    loading="eager"
+                  />
+                </div>
+                <div class="hero-card-details">
+                  <h2 class="hero-card-name">Ismail Benradouan</h2>
+                  <p class="hero-card-subtitle">Data Scientist & ML Engineer</p>
+                  <div class="hero-card-meta">
+                    <span>Master MSD · FPO Ibn Zohr</span>
+                    <span aria-hidden="true">·</span>
+                    <span>2025–2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proof Strip below Hero (Claim-to-Proof Adjacency) -->
+          <div class="proof-strip reveal reveal-delay-3">
+            <div class="proof-item">
+              <span class="proof-item-label">Academic Track</span>
+              <span class="proof-item-value">Master MSD</span>
+              <span class="proof-item-sub">Mathematical Eng. & Data Science</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-item-label">Core Specialization</span>
+              <span class="proof-item-value">ML & Big Data</span>
+              <span class="proof-item-sub">Predictive Modeling & Distributed Data</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-item-label">Key Stack</span>
+              <span class="proof-item-value">Python & C++</span>
+              <span class="proof-item-sub">Scikit-learn, Hadoop, MongoDB</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-item-label">Availability</span>
+              <span class="proof-item-value">Open to Roles</span>
+              <span class="proof-item-sub">Internships & Engineering Positions</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           3. ABOUT ME SECTION
+           ==================================================================== -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">01. Overview</span>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-desc">
+              Bridging pure mathematical rigor with modern data engineering and machine learning architectures.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <!-- Narrative Column -->
+            <div class="about-text reveal">
+              <p>
+                I am a Master's student in <strong>Mathematical Engineering and Data Science</strong> at the Faculté Polydisciplinaire d’Ouarzazate (Université Ibn Zohr). My background is rooted in rigorous mathematics, optimization, and computer science through my previous <strong>Licence in Mathematics and Computer Science (SMI)</strong>.
+              </p>
+              <p>
+                My passion lies at the intersection of <strong>exploratory data analysis</strong>, <strong>statistical modeling</strong>, and <strong>distributed computing</strong>. Whether designing predictive pipelines using Scikit-learn, building scalable document aggregations with MongoDB, or configuring distributed storage with Hadoop and HBase, I focus on clean architecture, mathematical precision, and scalable performance.
+              </p>
+
+              <div class="about-highlights">
+                <div class="highlight-box">
+                  <span class="highlight-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.21 15.89-1.42-1.42a4 4 0 0 0-5.66 0l-.71.71a4 4 0 0 1-5.66 0l-1.42-1.42a4 4 0 0 1 0-5.66l.71-.71a4 4 0 0 0 0-5.66L5.64.31a9 9 0 0 0 0 12.73l1.41 1.41a9 9 0 0 0 12.73 0l1.43-1.42a1 1 0 0 0 0-1.42Z"></path></svg>
+                    Applied Mathematics
+                  </span>
+                  <span class="highlight-desc">Probability, Optimization, Numerical Analysis & Algorithms</span>
+                </div>
+                <div class="highlight-box">
+                  <span class="highlight-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                    Distributed Data
+                  </span>
+                  <span class="highlight-desc">Hadoop HDFS, YARN, MongoDB Aggregation, Apache HBase</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Side Card: Languages & Key Details -->
+            <div class="about-sidebar reveal reveal-delay-2">
+              <div class="languages-box">
+                <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.25rem;">Language Proficiencies</h3>
+                <p style="font-size: 0.8125rem; color: var(--text-muted);">Multilingual communication across international technical environments</p>
+
+                <div class="language-list">
+                  <div class="language-item">
+                    <div class="language-name">
+                      <span>Tamazight</span>
+                      <span class="language-level">Native</span>
+                    </div>
+                    <div class="language-track">
+                      <div class="language-bar" data-percent="100%" style="width: 0%;"></div>
+                    </div>
+                  </div>
+                  <div class="language-item">
+                    <div class="language-name">
+                      <span>Arabic</span>
+                      <span class="language-level">Fluent</span>
+                    </div>
+                    <div class="language-track">
+                      <div class="language-bar" data-percent="100%" style="width: 0%;"></div>
+                    </div>
+                  </div>
+                  <div class="language-item">
+                    <div class="language-name">
+                      <span>French</span>
+                      <span class="language-level">Advanced</span>
+                    </div>
+                    <div class="language-track">
+                      <div class="language-bar" data-percent="85%" style="width: 0%;"></div>
+                    </div>
+                  </div>
+                  <div class="language-item">
+                    <div class="language-name">
+                      <span>English</span>
+                      <span class="language-level">Intermediate</span>
+                    </div>
+                    <div class="language-track">
+                      <div class="language-bar" data-percent="75%" style="width: 0%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Facts Card -->
+              <div class="highlight-box" style="margin-top: 1rem;">
+                <span class="highlight-title">Academic & Contact Overview</span>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <div><strong>Born:</strong> June 14, 2002</div>
+                  <div><strong>Origin:</strong> Iknioune Mlal Ait Ouallal, Zagora, Morocco</div>
+                  <div><strong>Current Location:</strong> Ouarzazate / Zagora, Morocco</div>
+                  <div><strong>Email:</strong> benradouanismail05@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           4. SKILLS SECTION
+           ==================================================================== -->
+      <section id="skills" class="section" style="background-color: var(--bg-surface-elevated);">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">02. Capabilities</span>
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-desc">
+              Comprehensive toolset spanning programming languages, machine learning frameworks, distributed systems, and mathematical foundations.
+            </p>
+          </div>
+
+          <div class="skills-categories">
+            <!-- Category 1: Programming Languages -->
+            <div class="skill-category-card reveal">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h3 class="skill-category-title">Programming Languages</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="92%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">C / C++</span>
+                    <span class="skill-percentage">84%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="84%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">SQL</span>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="88%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">JavaScript (ES6+)</span>
+                    <span class="skill-percentage">78%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="78%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 2: Data Science & ML -->
+            <div class="skill-category-card reveal reveal-delay-1">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                </div>
+                <h3 class="skill-category-title">Data Science & ML</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Scikit-learn & XGBoost</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Pandas & NumPy</span>
+                    <span class="skill-percentage">94%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="94%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">PyTorch</span>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">EDA & Model Evaluation</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 3: Big Data & NoSQL -->
+            <div class="skill-category-card reveal reveal-delay-2">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                </div>
+                <h3 class="skill-category-title">Big Data & NoSQL</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Hadoop (HDFS & YARN)</span>
+                    <span class="skill-percentage">82%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="82%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">MongoDB Aggregation</span>
+                    <span class="skill-percentage">86%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="86%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Apache HBase</span>
+                    <span class="skill-percentage">78%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="78%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Distributed Data Storage</span>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 4: Visualization -->
+            <div class="skill-category-card reveal">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </div>
+                <h3 class="skill-category-title">Data Visualization</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Matplotlib</span>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="88%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Seaborn</span>
+                    <span class="skill-percentage">86%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="86%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Statistical Plots & Diagnostics</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 5: Mathematics & Analysis -->
+            <div class="skill-category-card reveal reveal-delay-1">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path></svg>
+                </div>
+                <h3 class="skill-category-title">Applied Mathematics</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Statistics & Probability</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Mathematical Optimization</span>
+                    <span class="skill-percentage">86%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="86%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Numerical Analysis</span>
+                    <span class="skill-percentage">84%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="84%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 6: Tools & Environments -->
+            <div class="skill-category-card reveal reveal-delay-2">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                </div>
+                <h3 class="skill-category-title">Tools & Environment</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Git & GitHub</span>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="88%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Linux / Unix Shell</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">LaTeX Technical Typesetting</span>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="skill-progress-track">
+                    <div class="skill-progress-fill" data-percent="92%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           5. PROJECTS SECTION
+           ==================================================================== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">03. Works</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-desc">
+              Real implementations spanning web engineering, predictive machine learning pipelines, distributed big data architectures, and algorithms.
+            </p>
+          </div>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="projects-filter-bar reveal" role="tablist" aria-label="Project Categories">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works</button>
+            <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false">Machine Learning</button>
+            <button class="filter-btn" data-filter="bigdata" role="tab" aria-selected="false">Big Data & NoSQL</button>
+            <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Development</button>
+            <button class="filter-btn" data-filter="algo" role="tab" aria-selected="false">Algorithms</button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+            <!-- Project 1: E-commerce Django -->
+            <article class="project-card reveal" data-category="web" data-id="e-commerce-django">
+              <div class="project-header-graphic">
+                <div class="project-icon-large" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                </div>
+                <span class="project-year-badge">2024</span>
+              </div>
+              <div class="project-body">
+                <span class="project-category">Full-Stack Web Engineering</span>
+                <h3 class="project-title">Plateforme E-commerce avec Django</h3>
+                <p class="project-description">
+                  Développement d'une application web complète avec Django. Implémentation de l'authentification sécurisée, gestion dynamique du panier et traitement transactionnel des commandes.
+                </p>
+                <ul class="project-highlights-list">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Interface web responsive avec HTML, CSS et JavaScript
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Gestion d'authentification utilisateur et contrôle des rôles
+                  </li>
+                </ul>
+                <div class="project-tech-tags">
+                  <span>Python</span>
+                  <span>Django</span>
+                  <span>PostgreSQL</span>
+                  <span>HTML5 / CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-secondary btn-project-details" type="button">
+                    Details & Architecture &rarr;
+                  </button>
+                  <a href="#contact" class="btn btn-ghost" title="Contact about project">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Predictive ML -->
+            <article class="project-card reveal reveal-delay-1" data-category="ml" data-id="predictive-ml">
+              <div class="project-header-graphic">
+                <div class="project-icon-large" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+                </div>
+                <span class="project-year-badge">2025</span>
+              </div>
+              <div class="project-body">
+                <span class="project-category">Machine Learning & Modeling</span>
+                <h3 class="project-title">Analyse Prédictive avec Machine Learning</h3>
+                <p class="project-description">
+                  Analyse exploratoire de données (EDA) et préparation de datasets Kaggle. Implémentation de modèles de régression et classification avec Scikit-learn et XGBoost.
+                </p>
+                <ul class="project-highlights-list">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Évaluation rigoureuse des performances avec RMSE, MAE et matrice de confusion
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Pipeline de sélection et ingénierie de variables prédictives
+                  </li>
+                </ul>
+                <div class="project-tech-tags">
+                  <span>Python</span>
+                  <span>Scikit-learn</span>
+                  <span>Pandas</span>
+                  <span>NumPy</span>
+                  <span>XGBoost</span>
+                  <span>Seaborn</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-secondary btn-project-details" type="button">
+                    Details & Architecture &rarr;
+                  </button>
+                  <a href="#contact" class="btn btn-ghost" title="Contact about project">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Big Data & NoSQL -->
+            <article class="project-card reveal" data-category="bigdata" data-id="bigdata-hadoop-nosql">
+              <div class="project-header-graphic">
+                <div class="project-icon-large" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m8 17 4 4 4-4"></path></svg>
+                </div>
+                <span class="project-year-badge">2025</span>
+              </div>
+              <div class="project-body">
+                <span class="project-category">Distributed Computing</span>
+                <h3 class="project-title">Architecture Big Data et NoSQL</h3>
+                <p class="project-description">
+                  Mise en place d'un environnement distribué Hadoop (HDFS & YARN) pour le traitement à large échelle. Conception de pipelines analytiques MongoDB et manipulation HBase.
+                </p>
+                <ul class="project-highlights-list">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Traitement distribué sur cluster Hadoop (HDFS, YARN)
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Pipelines d'analyse avancés avec MongoDB Aggregation & HBase
+                  </li>
+                </ul>
+                <div class="project-tech-tags">
+                  <span>Apache Hadoop</span>
+                  <span>HDFS</span>
+                  <span>YARN</span>
+                  <span>MongoDB</span>
+                  <span>Apache HBase</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-secondary btn-project-details" type="button">
+                    Details & Architecture &rarr;
+                  </button>
+                  <a href="#contact" class="btn btn-ghost" title="Contact about project">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Algorithms & Data Structures -->
+            <article class="project-card reveal reveal-delay-1" data-category="algo" data-id="algorithms-data-structures">
+              <div class="project-header-graphic">
+                <div class="project-icon-large" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="20" y2="20"></line><line x1="6" y1="9" x2="6" y2="15"></line></svg>
+                </div>
+                <span class="project-year-badge">2024</span>
+              </div>
+              <div class="project-body">
+                <span class="project-category">Computational Science</span>
+                <h3 class="project-title">Algorithmique et Structures de Données</h3>
+                <p class="project-description">
+                  Implémentation d'algorithmes fondamentaux (quicksort, mergesort, recherche binaire) et parcours de graphes (BFS et DFS) optimisés en C++, C et Python.
+                </p>
+                <ul class="project-highlights-list">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Parcours de graphes BFS et DFS en Python, C et C++
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Analyse empirique de complexité algorithmique temporelle et spatiale
+                  </li>
+                </ul>
+                <div class="project-tech-tags">
+                  <span>C++</span>
+                  <span>C</span>
+                  <span>Python</span>
+                  <span>Graph Algorithms</span>
+                  <span>Complexity Analysis</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-secondary btn-project-details" type="button">
+                    Details & Architecture &rarr;
+                  </button>
+                  <a href="#contact" class="btn btn-ghost" title="Contact about project">Inquire</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           6. EDUCATION & TIMELINE SECTION
+           ==================================================================== -->
+      <section id="education" class="section" style="background-color: var(--bg-surface-elevated);">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">04. Academic Background</span>
+            <h2 class="section-title">Education & Qualifications</h2>
+            <p class="section-desc">
+              Strong mathematical and computational foundation developed through distinguished university programs in Morocco.
+            </p>
+          </div>
+
+          <div class="timeline-card reveal">
+            <div class="timeline-header">
+              <h3 style="font-size: 1.125rem; font-weight: 700;">Academic Progression</h3>
+              <span style="font-size: 0.8125rem; color: var(--text-muted); font-family: var(--font-mono);">2020 – 2026</span>
+            </div>
+
+            <div class="timeline-list">
+              <!-- Item 1: Master MSD -->
+              <div class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <span class="timeline-period">2025 – 2026</span>
+                <h4 class="timeline-degree">Master Ingénierie Mathématique et Science des Données</h4>
+                <p class="timeline-institution">Faculté Polydisciplinaire d’Ouarzazate — Université Ibn Zohr</p>
+                <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                  Specialization: Data Science, Machine Learning, Deep Learning, Big Data Architectures, Advanced Optimization, Predictive Modeling, and Distributed Systems.
+                </p>
+              </div>
+
+              <!-- Item 2: Licence SMI -->
+              <div class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <span class="timeline-period">2021 – 2024</span>
+                <h4 class="timeline-degree">Licence Sciences Mathématiques et Informatique (SMI)</h4>
+                <p class="timeline-institution">Faculté Polydisciplinaire d’Ouarzazate — Université Ibn Zohr</p>
+                <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                  Core Subjects: Algorithmic Foundations, Data Structures, Discrete Mathematics, Linear Algebra, Probability & Statistics, Numerical Methods, Databases, Object-Oriented Programming (C++/Java).
+                </p>
+              </div>
+
+              <!-- Item 3: Baccalauréat -->
+              <div class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <span class="timeline-period">2020</span>
+                <h4 class="timeline-degree">Baccalauréat Sciences de la Vie et de la Terre (SVT)</h4>
+                <p class="timeline-institution">Lycée Salah Eddine EL Ayoubi, Nkob - Zagora</p>
+                <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                  Scientific foundation in experimental methods, mathematics, and natural sciences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           7. CONTACT SECTION
+           ==================================================================== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">05. Connect</span>
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-desc">
+              Whether you have an upcoming data science challenge, research collaboration, or internship/employment opportunity, feel free to drop a message.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left Column: Direct Contact Info -->
+            <div class="contact-info-card reveal">
+              <div class="contact-channel">
+                <div class="contact-channel-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                </div>
+                <div class="contact-channel-content">
+                  <span class="contact-channel-label">Email Address</span>
+                  <a href="mailto:benradouanismail05@gmail.com" class="contact-channel-val">
+                    benradouanismail05@gmail.com
+                  </a>
+                  <button id="copy-email-btn" class="copy-email-btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                    Copy email to clipboard
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <div class="contact-channel-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-channel-content">
+                  <span class="contact-channel-label">Telephone</span>
+                  <div class="contact-channel-val" style="display: flex; flex-direction: column; gap: 0.2rem;">
+                    <a href="tel:+212622613406">+212 622 613 406</a>
+                    <a href="tel:+212625732885">+212 625 732 885</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <div class="contact-channel-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-channel-content">
+                  <span class="contact-channel-label">Location</span>
+                  <span class="contact-channel-val">Iknioune Mlal Ait Ouallal, Zagora / Ouarzazate, Morocco</span>
+                </div>
+              </div>
+
+              <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+                <a href="/assets/aistudio/ismail__1__f454b77e.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  Download Curriculum Vitae (PDF)
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Contact Form -->
+            <div class="contact-form-container reveal reveal-delay-1">
+              <form id="contact-form" class="contact-form" novalidate>
+                <div id="form-status-alert" class="form-status-alert" role="status" aria-live="polite"></div>
+
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Full Name <span style="color: var(--error);">*</span></label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="e.g. Alex Dupont"
+                    required
+                    autocomplete="name"
+                  />
+                  <span id="name-error" class="form-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address <span style="color: var(--error);">*</span></label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="e.g. alex@company.com"
+                    required
+                    autocomplete="email"
+                  />
+                  <span id="email-error" class="form-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    id="contact-subject"
+                    name="subject"
+                    class="form-input"
+                    placeholder="e.g. Data Science Opportunity / Machine Learning Project"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message <span style="color: var(--error);">*</span></label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="form-textarea"
+                    placeholder="Describe your inquiry, project scope, or opportunity..."
+                    required
+                  ></textarea>
+                  <span id="message-error" class="form-error"></span>
+                </div>
+
+                <button id="contact-submit-btn" type="submit" class="btn btn-primary" style="align-self: flex-start; margin-top: 0.5rem;">
+                  Send Message
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         8. PROJECT DETAIL MODAL DIALOG
+         ==================================================================== -->
+    <div id="project-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-window">
+        <div class="modal-header">
+          <div>
+            <h3 id="modal-title" class="modal-title">Project Title</h3>
+            <span id="modal-category-meta" class="modal-category-meta">Category</span>
+          </div>
+          <button id="modal-close-btn" class="modal-close-btn" aria-label="Close project modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+
+        <div class="modal-content-section">
+          <h4 class="modal-section-heading">Detailed Overview</h4>
+          <p id="modal-description" style="color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.65;"></p>
+        </div>
+
+        <div class="modal-content-section">
+          <h4 class="modal-section-heading">Key Technical Highlights</h4>
+          <ul id="modal-highlights" class="project-highlights-list" style="margin-top: 0.5rem;"></ul>
+        </div>
+
+        <div class="modal-content-section">
+          <h4 class="modal-section-heading">System Specs & Benchmarks</h4>
+          <div class="modal-specs-grid">
+            <div class="modal-spec-item">
+              <span class="modal-spec-label">Architecture</span>
+              <span id="modal-architecture" class="modal-spec-value"></span>
+            </div>
+            <div class="modal-spec-item">
+              <span class="modal-spec-label">Performance Metric</span>
+              <span id="modal-metrics" class="modal-spec-value"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-content-section">
+          <h4 class="modal-section-heading">Technologies Utilized</h4>
+          <div id="modal-tags" class="project-tech-tags" style="border: none; padding-top: 0.25rem;"></div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+          <a href="#contact" class="btn btn-primary" onclick="document.getElementById('project-modal-backdrop').classList.remove('open'); document.body.style.overflow = '';">
+            Contact Regarding This Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         9. TOAST NOTIFICATION CONTAINER
+         ==================================================================== -->
+    <div id="toast" class="toast-notification" role="status" aria-live="polite">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-primary);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      <span id="toast-message">Notification message</span>
+    </div>
+
+    <!-- ====================================================================
+         10. FOOTER
+         ==================================================================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a href="#hero" class="brand">
+              <span class="brand-badge" aria-hidden="true">IB</span>
+              <span>Ismail Benradouan</span>
+            </a>
+            <p class="footer-brand-bio">
+              Data Scientist & Mathematical Engineering Specialist. Designing predictive models and scalable distributed systems with mathematical rigor.
+            </p>
+          </div>
+
+          <div class="footer-nav">
+            <a href="#about" class="footer-link">About</a>
+            <a href="#skills" class="footer-link">Skills</a>
+            <a href="#projects" class="footer-link">Projects</a>
+            <a href="#education" class="footer-link">Education</a>
+            <a href="#contact" class="footer-link">Contact</a>
+            <a href="/assets/aistudio/ismail__1__f454b77e.pdf" target="_blank" rel="noopener noreferrer" class="footer-link">CV (PDF)</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Ismail Benradouan. All rights reserved.</p>
+          <a href="#hero" class="back-to-top-btn" title="Back to top">
+            Back to Top
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vanilla Javascript Application Entry -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
